@@ -8,7 +8,6 @@ class AzureCli < Formula
   url "https://github.com/BLAKE2/BLAKE2/archive/20190724.tar.gz"
   sha256 "7f2c72859d462d604ab3c9b568c03e97b50a4052092205ad18733d254070ddc2"
   license "CC0-1.0"
-  sha256
   head "https://github.com/redis/redis.git", branch: "unstable"
 
   # 需要卸载的冲突包
@@ -66,6 +65,8 @@ class AzureCli < Formula
     etc.install "sentinel.conf" => "redis-sentinel.conf"
 
     # 重命名二进制文件
+    # 安装所有文件
+    bin.install Dir["*"]
     bin.install "doggo-api.bin" => "doggo-api"
 
     # 编译前的准备
