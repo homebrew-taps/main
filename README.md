@@ -1,6 +1,7 @@
 ## homebrew-taps
 
+- 个人 `Homebew tap`
 
-## add this tap
+## 添加至 `Homebrew`
 
-`brew tap pkgstop/homebrew-taps`
+`brew tap mkpkg/homebrew-taps`
