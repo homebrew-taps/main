@@ -36,6 +36,7 @@ class AzureCli < Formula
   end
 
   # 定义安装过程
+  # https://docs.brew.sh/Formula-Cookbook#variables-for-directory-locations
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
